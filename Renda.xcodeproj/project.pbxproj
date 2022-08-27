@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B110959628BA9FBE002F5B07 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = B110959528BA9FBE002F5B07 /* FirebaseFirestore */; };
+		B110959828BAA085002F5B07 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B110959728BAA085002F5B07 /* GoogleService-Info.plist */; };
 		B17AD9DA28B7C287004904CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17AD9D928B7C287004904CF /* AppDelegate.swift */; };
 		B17AD9DC28B7C287004904CF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17AD9DB28B7C287004904CF /* SceneDelegate.swift */; };
 		B17AD9DE28B7C287004904CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17AD9DD28B7C287004904CF /* ViewController.swift */; };
@@ -16,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B110959728BAA085002F5B07 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		B17AD9D628B7C287004904CF /* Renda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Renda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B17AD9D928B7C287004904CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B17AD9DB28B7C287004904CF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B110959628BA9FBE002F5B07 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +67,7 @@
 				B17AD9E228B7C288004904CF /* Assets.xcassets */,
 				B17AD9E428B7C288004904CF /* LaunchScreen.storyboard */,
 				B17AD9E728B7C288004904CF /* Info.plist */,
+				B110959728BAA085002F5B07 /* GoogleService-Info.plist */,
 			);
 			path = Renda;
 			sourceTree = "<group>";
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = Renda;
+			packageProductDependencies = (
+				B110959528BA9FBE002F5B07 /* FirebaseFirestore */,
+			);
 			productName = Renda;
 			productReference = B17AD9D628B7C287004904CF /* Renda.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = B17AD9CD28B7C287004904CF;
+			packageReferences = (
+				B110959428BA9FBE002F5B07 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = B17AD9D728B7C287004904CF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B17AD9E628B7C288004904CF /* LaunchScreen.storyboard in Resources */,
+				B110959828BAA085002F5B07 /* GoogleService-Info.plist in Resources */,
 				B17AD9E328B7C288004904CF /* Assets.xcassets in Resources */,
 				B17AD9E128B7C287004904CF /* Main.storyboard in Resources */,
 			);
@@ -358,6 +370,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B110959428BA9FBE002F5B07 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B110959528BA9FBE002F5B07 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B110959428BA9FBE002F5B07 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B17AD9CE28B7C287004904CF /* Project object */;
 }
